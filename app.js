@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 
 
 app.get('/Servicios', (req, res) => {
-    res.render('servicios', {tituloServicios : "Este es un mensaje dinámico de servicios"});
+    res.render('servicios', {tituloServicios : "Este es un mensaje dinámico de servicios v5"});
 });
 
 app.use((req, res, next) => {
