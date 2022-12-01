@@ -11,14 +11,6 @@ const port = 3001;
 //middleware
  app.use(express.static(__dirname + "/public"));
 
-app.get("/", (req, res) => {
-    res.render("index", { titulo: "inicio EJS" });
-  });
-
-
-app.get('/Servicios', (req, res) => {
-    res.render('servicios', {tituloServicios : "Este es un mensaje dinámico de servicios v5"});
-});
 
 app.use((req, res, next) => {
     res.status(404).render('404', {
